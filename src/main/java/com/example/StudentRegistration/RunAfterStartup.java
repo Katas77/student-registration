@@ -11,7 +11,7 @@ public class RunAfterStartup {
 
         System.out.println("Enter method name :\n" +
                 "•\tprint (List all existing students) \n" +
-                "•\tadd (Adds a new student First name last name age)\n" +
+                "•\tadd (Adds a new student: first name, last name, age)\n" +
                 "•\tdel (Deletes a student by identifier (id))\n" +
                 "•\tdelAll (Clear the list of students completely)\n");
     }
