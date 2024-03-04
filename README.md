@@ -20,8 +20,8 @@
 - app.studentConfig.enabled=tru включить  возможность создавать студентов при старте приложения
 ### Есть возможность запустить приложение, используя Docker
 -  Для запуска  с использованием  Docker  необходимо в терминале  Набрать команды:
-- - docker build -t student-registration . (docker build создает образы Docker из файла Dockerfile)
-- - docker run student-registration (docker run запускает команду в новом контейнере, при необходимости извлекая образ и запуская контейнер:)
+- - docker build -t student-registration .    (docker build создает образы Docker из файла Dockerfile)
+- - docker run -it student-registration       (docker run запускает команду в новом контейнере, при необходимости извлекая образ и запуская контейнер:)
 
 
 
