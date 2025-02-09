@@ -1,7 +1,8 @@
 
-package com.example.StudentRegistration;
+package com.example.StudentRegistration.worker;
 
 import com.example.StudentRegistration.event.EventHolder;
+import com.example.StudentRegistration.model.Student;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationEventPublisher;
@@ -30,7 +31,7 @@ public class Worker {
         Student student = Student.builder().uuId(id).firstName(firstName).lastName(lastName).age(age).build();
         studentHashMap.put(student.getUuId(), student);
         String text = "this new student has been added";
-        applicationEventPublisher.publishEvent(new EventHolder(this, student, text));
+        applicationEventPublisher.publishEvent(new EventHolder(this, student, text));//метод listen будет реагировать на  это события  EventHolder.
 
     }
 

@@ -1,6 +1,7 @@
-package com.example.StudentRegistration;
+package com.example.StudentRegistration.worker;
 
 
+import com.example.StudentRegistration.model.Student;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -12,7 +13,7 @@ import java.util.UUID;
 
 @Component
 @Getter
-@ConditionalOnProperty("app.studentConfig.enabled")
+@ConditionalOnProperty("app.studentConfig.enabled")//Аннотация @ConditionalOnProperty  означает, что данный компонент будет создан и инициализирован только тогда, когда свойство app.studentConfig.enabled установлено в true в файле свойств
 public class StudentConfig {
     private final Worker worker;
 

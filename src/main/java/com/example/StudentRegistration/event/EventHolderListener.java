@@ -13,3 +13,4 @@ public class EventHolderListener {
     }
 
 }
+//@EventListener говорит Spring, что метод listen должен реагировать на события типа EventHolder.
